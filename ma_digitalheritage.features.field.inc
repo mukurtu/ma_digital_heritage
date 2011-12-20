@@ -427,7 +427,7 @@ function ma_digitalheritage_field_default_fields() {
         'module' => 'geofield',
         'settings' => array(),
         'type' => 'geofield_latlon',
-        'weight' => '36',
+        'weight' => '35',
       ),
     ),
   );
@@ -2226,6 +2226,7 @@ Use yyyy-mm-dd format or insert incomplete date.');
   t('Keywords');
   t('Language');
   t('Location Description');
+  t('Map');
   t('Media');
   t('Media type');
   t('Publisher');
@@ -2236,7 +2237,6 @@ Use yyyy-mm-dd format or insert incomplete date.');
   t('Select the license you want to apply to your content. Find out more about TK Licenses on our <a href="http://www.mukurtu.org/wiki/Manual:Licenses" target=a_blank >wiki</a>.');
   t('Sharing Protocols (group content visibility)');
   t('Source');
-  t('Map');
   t('Standard and Creative Commons Licensing');
   t('Subject');
   t('Traditional Knowledge');

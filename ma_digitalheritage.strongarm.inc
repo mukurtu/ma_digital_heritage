@@ -14,8 +14,38 @@ function ma_digitalheritage_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_digital_heritage';
-  $strongarm->value = 'edit-workflow';
+  $strongarm->value = 'edit-community-tags';
   $export['additional_settings__active_tab_digital_heritage'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'community_tags_display_digital_heritage';
+  $strongarm->value = '2';
+  $export['community_tags_display_digital_heritage'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'community_tags_vocabularies';
+  $strongarm->value = array(
+    'tags' => array(
+      'is_enabled' => 1,
+      'types' => array(
+        'page' => array(
+          'is_valid' => TRUE,
+          'display_handler' => 'links',
+          'opmode' => 0,
+        ),
+        'digital_heritage' => array(
+          'is_valid' => TRUE,
+          'display_handler' => 'links',
+          'opmode' => 2,
+        ),
+      ),
+    ),
+  );
+  $export['community_tags_vocabularies'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
