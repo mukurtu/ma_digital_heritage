@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Digital Heritage Metadata Import feature.
+ */
+
+include_once('ma_digitalheritage.features.inc');
